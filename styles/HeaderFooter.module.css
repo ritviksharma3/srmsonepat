@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.logo img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.title {
+  margin-left: 1rem;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.link:hover {
+  color: blue;
+  transition: ease-in 0.2s;
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    height: 1rem;
+    width: 1rem;
+  }
+  .title {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  .footer {
+    font-size: 0.9rem;
+  }
+}
