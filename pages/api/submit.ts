@@ -39,7 +39,7 @@ export default async function handler(
     // 	createdAt: new Date().toISOString(),
     // });
 
-    await db.tRANSPORTSONEPAT.create({
+    await db.transportSonepat.create({
       data: {
         name,
         email,
