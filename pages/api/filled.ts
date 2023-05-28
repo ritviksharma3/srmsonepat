@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import twilio from "twilio";
 
-const accountSid = "ACd3f6351338504eb13f8fade63f9064e4";
-const authToken = "5571260d96a1fd90ca571db5be86ea75";
+const accountSid = process.env.ACCOUNT_SID as string;
+const authToken = process.env.AUTH_TOKEN as string;
 const client = twilio(accountSid, authToken);
 
 export default async function handler(
@@ -12,7 +12,7 @@ export default async function handler(
   const { phoneNumber } = req.body;
   try {
     client.messages.create({
-      body: `Hi, Thank you for contacting Transport Department at SRM University, Sonepat. We will review and resolve your issue at the earliest.`,
+      body: `Hi, Thank you for contacting Transport Department at SRM University, Sonepat. We will review your issue at the earliest.`,
       from: "+14092455658",
       to: "+91" + phoneNumber,
     });
