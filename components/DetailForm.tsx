@@ -237,8 +237,6 @@ function DetailForm() {
               value={email}
               onChange={handleEmailChange}
               required
-              maxLength={22}
-              minLength={16}
             />
           </div>
           <div className={styles.category}>
@@ -249,10 +247,7 @@ function DetailForm() {
               id="registration"
               value={registration}
               onChange={handleRegistrationChange}
-              pattern="[A-Za-z]+[0-9]+"
               required
-              maxLength={16}
-              minLength={10}
             />
           </div>
         </div>

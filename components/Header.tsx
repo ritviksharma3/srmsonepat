@@ -1,5 +1,5 @@
 import styles from "@/styles/HeaderFooter.module.css";
-import Logo from "../public/logo_srm.png";
+import Logo from "/public/logo.png";
 import Image from "next/image";
 
 function Header() {
@@ -8,8 +8,8 @@ function Header() {
       <div>
         <Image
           src={Logo}
-          width={64}
-          height={64}
+          width={200}
+          height={80}
           alt="SRM University, Sonepat"
         />
       </div>
