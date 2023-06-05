@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 const TelegramBot = require("node-telegram-bot-api");
 
 const BOT_TOKEN = "5810534401:AAFjd0vjJ23CgTclTz6ZSSiZcDTHwQ7G2Lg";
-const CHAT_ID_TG = "-913144311";
+const CHAT_ID_TG = "-1001931437535";
 const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/`;
 
 // export default async function handler(
